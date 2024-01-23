@@ -1,0 +1,278 @@
+@import url('https://fonts.cdnfonts.com/css/bellmont');
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Bellmont', sans-serif;
+    font-size: 14px;
+    background-color: #455f51;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+section{
+    background-color: #37a76f;
+    width: 90%;
+    height:auto;
+    box-shadow: 0px 5px 58px rgba(1, 1, 1, 100%);
+    margin: 5% 5%;
+    border-radius: 15px;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #455f51;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header>h1{
+    background-color: unset;
+    margin: 1.5% 4%;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: white;
+    animation: moveright 2s;
+}
+@keyframes moveright{
+    0%{
+        translate:-500px 0 ;
+        color: black;
+    }
+    100%{
+        translate:0 0 ;
+
+    }
+}
+.nav{
+    background-color: unset;
+    display: flex;
+    flex-direction: row;
+    padding-right:7%;
+    margin: 2% 4%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav>a{
+    background-color: unset;
+    text-decoration: none;
+    margin: 2% 5%;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    color: white;
+    transition: 0.7s;
+}
+.nav>a:hover{
+    transform: scale(1.2);
+    text-shadow: 3px 7px 3px black;
+}
+.motion1{
+    animation: movedown 2s;
+}
+@keyframes movedown{
+    0%{
+        translate:0 -100px ;
+        color: black;
+        rotate: 20deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -20deg;
+    }
+    100%{
+        translate:0 0 ;
+        rotate: 0deg;
+    }
+}
+.motion2{
+    animation: moveup 2s;
+}
+@keyframes moveup{
+    0%{
+        translate:0 100px ;
+        color: black;
+        rotate: -20deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: 20deg;
+    }
+    100%{
+        translate:0 0 ;
+        rotate: 0deg;
+
+    }
+}
+.gamelook{
+    display: flex;
+    flex-direction: row;
+    background-color: unset;
+    margin-top: 4%;
+    align-items: center;
+}
+.line1{
+    width: 10%;
+    height: 600px;
+    background-color: #455f51;
+    margin-right: 5%;
+}
+.gameplace{
+    width: 70%;
+    height: 550px;
+    background-color: #455f51;
+    background-size: cover;
+    display: flex;
+}
+.gameplacecontact{
+    width: 70%;
+    height: 550px;
+    background-color: #455f51;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#gameplace {
+    height: 550px;
+    width: 70%;
+}
+@keyframes slideRoad {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+#score{
+    background: unset;
+    font-size: 2em;
+    margin: 2% 8% 0% 2%;
+    color: white;
+}
+#button{
+    width: 75px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
+    border-radius: 15px;
+    margin-top: 51%;
+    margin-left: 40.5%;
+    position: relative;
+}
+.line2{
+    width: 10%;
+    height: 600px;
+    background-color: #455f51;
+    margin-left: 5%;
+}
+.footer{
+    width: 100%;
+    height: 20%;
+    background-color: #455f51;
+    margin-top: 4%;
+    border-radius:  0px 0px 15px 15px;
+}
+.footer>h1{
+    background-color: unset;
+    font-size: 3em;
+    padding: 3%;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+} 
+
+@keyframes moveCar2 {
+    0% { top: -130px; }
+    100% { top: 100vh; }
+}
+
+@keyframes moveCar3 {
+    0% { top: -130px; }
+    100% { top: 100vh; }
+}
+
+@keyframes moveCar4 {
+    0% { top: -130px; }
+    100% { top: 100vh; }
+}
+
+.title{
+    margin: auto;
+    text-align: center;
+    padding: 3%;
+}
+.title>h1{
+    font-size:2em;
+}
+.game{
+    margin-top: 2%;
+    margin-left: 27%;
+    width: 460px;
+}
+.gametitle{
+    background-color:#37a76f ;
+    text-align: center;
+    color: #e2dfcc;
+    margin: auto;
+    font-size: 2.5em;
+    font-weight:550;
+    width: 450px;
+}
+
+.square{
+    background-color:#37a76f;
+    color: white;
+    float: right;
+    width: 143px;
+    height: 143px;
+    margin: 1%;
+    font-size: 8em;
+    font-weight: 500;
+    text-align: center;
+}
+.square:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+.rules{
+    color: #e2dfcc;
+    font-size: 2.3em;
+    margin: 2% 3% ;
+}
+.rules1{
+    color: #e2dfcc;
+    font-size: 2.3em;
+    margin: 5% 3% ;
+}
+#emailarea{
+    background-color: #e2dfcc;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin: auto;
+}
+#textarea{
+    background-color: #e2dfcc;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+}
+#submitbutton{
+    background-color: #e2dfcc;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin: auto;
+
+}
