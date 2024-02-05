@@ -1,6 +1,26 @@
 let title = document.querySelector('.gametitle');
 let turn = 'x';
 let square = [];
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openIcon = document.getElementById("open");
+    const closeIcon = document.getElementById("close");
+    const linksDiv = document.getElementById("linksdiv");
+
+    openIcon.addEventListener("click", function () {
+        linksDiv.style.display = "block";
+        openIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener("click", function () {
+        linksDiv.style.display = "none";
+        openIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    });
+});
+
+
 function winner ()
 {
     let isDraw = true;
