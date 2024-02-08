@@ -83,7 +83,6 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #222;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -178,6 +177,7 @@ section{
     background-color: #455f51;
     background-size: cover;
     display: flex;
+
 }
 .gameplacecontact{
     width: 70%;
@@ -190,6 +190,23 @@ section{
 #gameplace {
     height: 550px;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+#usernames{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 15%;
+    justify-content: space-around;
+    margin-left: 16%;
+}
+#usernames>div>h1{
+    font-size: 1.8em;
+    color: #e2dfcc;
+}
+#spano,#spanx{
+    font-size: 1em;
 }
 @keyframes slideRoad {
     0% {
@@ -357,5 +374,60 @@ section{
     .footer>h1 {
         font-size: 1em;
     }
+    .rules {
+        color: #e2dfcc;
+        font-size: 1.4em;
+        margin: 2% 3%;
+    }
+    #linksdiv a {
+        color: #f0f0f0;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.5em;
+        
+    }
+    #emailarea {
+        background-color: #e2dfcc;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 0.5%;
+    }
+    #textarea {
+        background-color: #e2dfcc;
+        width: 198px;
+        height: 300px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 1%;
+    }
+    .game {
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .gametitle {
+        background-color: #37a76f;
+        text-align: center;
+        color: #e2dfcc;
+        margin: auto;
+        font-size: 2.5em;
+        font-weight: 550;
+        width: 100%;
+    }
+
+    .square {
+        background-color: #37a76f;
+        color: white;
+        float: right;
+        width: 31%;
+        height: 102px;
+        margin: 1%;
+        font-size: 5em;
+        font-weight: 500;
+        text-align: center;
+    }
+
 
 }
